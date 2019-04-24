@@ -5,23 +5,23 @@
 
 #addition
 def add(a, b):
- return a + b
+    return a + b
 
 #subtraction
 def subtract(a, b):
- return a - b
+     return a - b
 
 #multiply
 def multiply(a, b):
- return a * b
+    return a * b
 
 #division
 def divide(a, b):
- return a / b
+    return a / b
 
 #power
 def power(a, b):
- return pow(a, b)
+    return pow(a, b)
 
 
 #User input
@@ -38,19 +38,19 @@ num2 = int(input('Second number: '))
 
 #using functions
 if choice == '1':
- print(add(num1, num2))
+    print(add(num1, num2))
 
 elif choice == '2':
- print(subtract(num1, num2))
+    print(subtract(num1, num2))
 
 elif choice == '3':
- print(multiply(num1, num2))
+    print(multiply(num1, num2))
 
 elif choice == '4':
- print(divide(num1, num2))
+    print(divide(num1, num2))
 
 elif choice == '5':
- print(power(num1, num2))
+     print(power(num1, num2))
 
 else:
- print('Invalid Selection')
+    print('Invalid Selection')

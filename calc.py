@@ -1,29 +1,9 @@
 """simple calculator"""
 
 
-#define functions
 
-#addition
-def add(a, b):
-    return a + b
 
-#subtraction
-def subtract(a, b):
-     return a - b
-
-#multiply
-def multiply(a, b):
-    return a * b
-
-#division
-def divide(a, b):
-    return a / b
-
-#power
-def power(a, b):
-    return pow(a, b)
-
-#User input
+#User input to choose function
 def calc():
     print('1 for add')
     print('2 for subtract')
@@ -31,30 +11,49 @@ def calc():
     print('4 for divide')
     print('5 for power')
 
-    choice = input(':')
+    choice = int(input(':'))
     
-    num1 = int(input('First number: '))
-    num2 = int(input('Second number: '))
+#Using functions to 
+    if choice == int(1):
+        print(add(int(input('First number: ')), int(input('Second number: '))))
 
-
-    #using functions
-    if choice == '1':
-        print(add(num1, num2))
-
-    elif choice == '2':
-        print(subtract(num1, num2))
+    elif choice == int(2):
+        print(add(int(input('First number: ')), int(input('Second number: '))))
 
     elif choice == '3':
-        print(multiply(num1, num2))
+        print(add(int(input('First number: ')), int(input('Second number: '))))
 
     elif choice == '4':
-        print(divide(num1, num2))
+        print(add(int(input('First number: ')), int(input('Second number: '))))
 
     elif choice == '5':
-         print(power(num1, num2))
+        print(add(int(input('First number: ')), int(input('Second number: '))))
 
     else:
         print('Invalid Selection')
 
-#call program
+#Define functions
+#Addition
+def add(a, b):
+    return a + b
+
+#Subtraction
+def subtract(a, b):
+     return a - b
+
+#Multiply
+def multiply(a, b):
+    return a * b
+
+#Division
+def divide(a, b):
+    return a / b
+
+#Power
+def power(a, b):
+    return pow(a, b)
+
+#Call program
 calc()
+
+

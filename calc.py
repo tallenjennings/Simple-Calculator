@@ -1,8 +1,6 @@
 """simple calculator"""
 
 
-
-
 #User input to choose function
 def calc():
     print('1 for add')
@@ -11,24 +9,19 @@ def calc():
     print('4 for divide')
     print('5 for power')
 
-    choice = int(input(':'))
+    choice = input(':')
     
-#Using functions to 
-    if choice == int(1):
+    #Using functions to 
+    if choice == '1':
         print(add(int(input('First number: ')), int(input('Second number: '))))
-
-    elif choice == int(2):
+    elif choice == '2':
         print(add(int(input('First number: ')), int(input('Second number: '))))
-
     elif choice == '3':
         print(add(int(input('First number: ')), int(input('Second number: '))))
-
     elif choice == '4':
         print(add(int(input('First number: ')), int(input('Second number: '))))
-
     elif choice == '5':
         print(add(int(input('First number: ')), int(input('Second number: '))))
-
     else:
         print('Invalid Selection')
 

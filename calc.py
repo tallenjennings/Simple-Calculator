@@ -15,13 +15,13 @@ def calc():
     if choice == '1':
         print(add(int(input('First number: ')), int(input('Second number: '))))
     elif choice == '2':
-        print(add(int(input('First number: ')), int(input('Second number: '))))
+        print(subtract(int(input('First number: ')), int(input('Second number: '))))
     elif choice == '3':
-        print(add(int(input('First number: ')), int(input('Second number: '))))
+        print(multiply(int(input('First number: ')), int(input('Second number: '))))
     elif choice == '4':
-        print(add(int(input('First number: ')), int(input('Second number: '))))
+        print(divide(int(input('First number: ')), int(input('Second number: '))))
     elif choice == '5':
-        print(add(int(input('First number: ')), int(input('Second number: '))))
+        print(power(int(input('First number: ')), int(input('Second number: '))))
     else:
         print('Invalid Selection')
 
@@ -47,6 +47,7 @@ def power(a, b):
     return pow(a, b)
 
 #Call program
-calc()
+while True:
+    calc()
 
 

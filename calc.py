@@ -47,7 +47,12 @@ def power(a, b):
     return pow(a, b)
 
 #Call program
-while True:
+cont = 'y'
+while cont.lower() == 'y':
     calc()
+    cont = input('Continue?y/n:')
+    if cont == 'n':
+        break
+    
 
 
